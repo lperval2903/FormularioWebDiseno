@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140" role="img" aria-label="Reproductor azul">
+    <rect x="47" y="8" width="68" height="116" rx="7" fill="#b7c2cc" stroke="#777" stroke-width="2"/>
+    <rect x="53" y="14" width="56" height="100" rx="4" fill="#25659b"/>
+    <rect x="59" y="20" width="44" height="37" fill="#edf2f5" stroke="#b7c2cc" stroke-width="2"/>
+    <path d="M65 28h30M65 36h24M65 44h18" stroke="#7790a5" stroke-width="3"/>
+    <circle cx="81" cy="80" r="24" fill="#f5f7f8" stroke="#c4cdd1" stroke-width="2"/>
+    <circle cx="81" cy="80" r="7" fill="#d7dde0"/>
+    <path d="M53 101c-13-4-23 2-25 12 9 5 18 3 27-3M109 96c20 5 29 15 28 23-12 3-24-3-32-12" fill="none" stroke="#b7c2cc" stroke-width="7" stroke-linecap="round"/>
+</svg>

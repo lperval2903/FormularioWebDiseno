@@ -1,8 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa de reproductores</title>
+    <style>
+        :root {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #111;
+        }
+
+        body {
+            margin: 1.5rem;
+            background: #fff;
+        }
+
+        table {
+            width: min(100%, 760px);
+            margin: 0 auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+            border: 1px solid #555;
+        }
+
+        col.label {
+            width: 24%;
+        }
+
+        col.product {
+            width: 15.2%;
+        }
+
+        th,
+        td {
+            height: 72px;
+            padding: 0.75rem 0.5rem;
+            border: 1px solid #777;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        thead th {
+            height: 140px;
+        }
+
+        tbody th {
+            font-weight: 700;
+        }
+
+        .product-image {
+            display: block;
+            width: auto;
+            height: 112px;
+            margin: 0 auto;
+        }
+
+        .strong {
+            font-weight: 700;
+        }
+
+        ul {
+            display: inline-block;
+            margin: 0;
+            padding-left: 1.1rem;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <div align="center">
@@ -19,26 +82,63 @@
         </a>
     </div>
 
-    <h1>Ejercicio práctica con Tables</h1>
-    <table align ="center" border="1">
+    <table>
+        <colgroup>
+            <col class="label">
+            <col class="product" span="5">
+        </colgroup>
         <thead>
             <tr>
-                <th>Columna 1</th>
-                <th>Columna 2</th>
-                <th>Columna 3</th>
+                <th scope="col"></th>
+                <th scope="colgroup" colspan="3">
+                    <img class="product-image" src="./img/reproductor-azul.svg" alt="Reproductor azul">
+                </th>
+                <th scope="colgroup" colspan="2">
+                    <img class="product-image" src="./img/reproductor-blanco.svg" alt="Reproductor blanco">
+                </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Dato 1</td>
-                <td>
-                    <p>Dato 2</p>
-                    <p>Dato 3</p>
+                <th scope="row">Capacidad</th>
+                <td>2GB</td>
+                <td>4GB</td>
+                <td>8GB</td>
+                <td>32GB</td>
+                <td>2GB</td>
+            </tr>
+            <tr>
+                <th scope="row">Colores</th>
+                <td class="strong">Blanco</td>
+                <td colspan="2">
+                    <ul>
+                        <li>Negro</li>
+                        <li>Rosa</li>
+                        <li>Dorado</li>
+                    </ul>
                 </td>
-                <td>Dato 3</td>
+                <td class="strong">Negro</td>
+                <td>
+                    <ul>
+                        <li>Negro</li>
+                        <li>Blanco</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Pantalla</th>
+                <td class="strong" colspan="3">3 pulgadas</td>
+                <td class="strong" colspan="2">7 pulgadas</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Tiempo de Carga</th>
+                <td class="strong" colspan="3" rowspan="2">1 hora</td>
+                <td class="strong" colspan="2">5 horas</td>
+            </tr>
+            <tr>
+                <td class="strong" colspan="2">30 minutos para 75%</td>
             </tr>
         </tbody>
     </table>
-
 </body>
 </html>
